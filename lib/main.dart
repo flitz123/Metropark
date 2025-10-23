@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'screens/main_screen.dart';
+import 'screens/main_sreen.dart';
 
 void main() {
   runApp(const MetroParkApp());
@@ -13,7 +13,7 @@ class MetroParkApp extends StatelessWidget {
     return MaterialApp(
       title: 'MetroPark',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: const MainScreen(),

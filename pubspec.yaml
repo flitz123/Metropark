@@ -24,9 +24,3 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
-
-  # Add permissions for Android
-  permissions:
-    - android.permission.SEND_SMS
-    - android.permission.RECEIVE_SMS
-    - android.permission.READ_SMS

@@ -1,4 +1,4 @@
-import 'package:flutter_sms/flutter_sms.dart';
+import 'package:flutter_sms/flutter_sms.dart' as sms;
 import 'package:url_launcher/url_launcher.dart';
 
 class SmsService {
@@ -10,7 +10,7 @@ class SmsService {
     required Function(String) onError,
   }) async {
     try {
-      String result = await sendSMS(
+      String result = await sms.sendSMS(
         message: message,
         recipients: [phoneNumber],
         sendDirect: true,
